@@ -5,8 +5,9 @@ const noteSchema = new Schema({
     text: {
         type: String, 
         required: true
-    }, user: {
-        type: mongoose.Schema.Types.ObjectId, 
+    }, 
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
         required: true
     }
 }, {
