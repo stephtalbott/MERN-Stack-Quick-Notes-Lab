@@ -10,7 +10,7 @@ async function createNote(req, res) {
 }
 
 async function index(req, res) {
-    const notes = await Note.find({})
+    const notes = await Note.find({user: req.user._id})
     res.json(notes);
 }
 
